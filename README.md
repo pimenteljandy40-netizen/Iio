@@ -75,7 +75,6 @@ local function StartHub()
     MainFrame.Draggable = true
     Instance.new("UICorner", MainFrame)
     Instance.new("UIStroke", MainFrame).Color = MainRed
-    local btnGetTool = crearBotonEstilo("DEL TOOL 🔨", 240, Color3.fromRGB(45, 45, 50), leftPanel) local btnResetWalls = crearBotonEstilo("RESET PAREDES 🧱", 285, Color3.fromRGB(100, 20, 20), leftPanel)
 
     -- BOTÓN PARA REGRESAR (MINIMIZADO)
     local OpenBtn = Instance.new("TextButton", ScreenGui)
@@ -139,7 +138,7 @@ local function StartHub()
     local FarmBtn = CreateBtn("FARM MASHMELLOW", UDim2.new(0.63, 0, 0, 65))
     local SellBtn = CreateBtn("SELL MASHMELLOW", UDim2.new(0.63, 0, 0, 130))
     local ToolBtn = CreateBtn("MASHMELLOW TOOL", UDim2.new(0.63, 0, 0, 195))
-
+local btnGetTool = crearBotonEstilo("DEL TOOL 🔨", 240, Color3.fromRGB(45, 45, 50), leftPanel) local btnResetWalls = crearBotonEstilo("RESET PAREDES 🧱", 285, Color3.fromRGB(100, 20, 20), leftPanel)
     local farmActive, sellActive = false, false
     
     -- LÓGICA DE FARM (ORDEN ORIGINAL: Agua, Azúcar, Gelatina, Bolsa)
